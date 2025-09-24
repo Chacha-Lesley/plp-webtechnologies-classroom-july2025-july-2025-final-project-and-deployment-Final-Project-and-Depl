@@ -1,6 +1,4 @@
-// package.json for development
-
-const packageJson = {
+{
     "name": "chacha-lesley-portfolio",
     "version": "1.0.0",
     "description": "Modern portfolio website for Chacha Lesley - Web Developer, Designer, and Storyteller",
@@ -36,4 +34,4 @@ const packageJson = {
         "url": "https://github.com/chachalesley/portfolio.git"
     },
     "homepage": "https://chachalesley.dev"
-};
+}

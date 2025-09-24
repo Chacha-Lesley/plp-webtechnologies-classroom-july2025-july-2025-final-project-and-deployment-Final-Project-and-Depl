@@ -6,7 +6,7 @@ A modern, responsive portfolio website showcasing the journey from storyteller t
 
 ## 🌟 Live Demo
 
-**[View Portfolio](https://chachalesley.dev)** *(Update with your actual domain)*
+**[View Portfolio](https://github.com/Chacha-Lesley)** *(Update with your actual domain)*
 
 ## 📋 Table of Contents
 
@@ -571,7 +571,7 @@ Users can install the portfolio as a native app:
 ### Get in Touch
 - **Email:** [chachalesley18@gmail.com](mailto:chachalesley18@gmail.com)
 - **LinkedIn:** [linkedin.com/in/chachalesley](https://www.linkedin.com/in/chachalesley)
-- **Portfolio:** [chachalesley.dev](https://chachalesley.dev)
+- **Portfolio:** [chachalesley.dev](https://github.com/Chacha-Lesley)
 
 ### Support
 If you encounter any issues or have questions:
