@@ -1,0 +1,39 @@
+// package.json for development
+
+const packageJson = {
+    "name": "chacha-lesley-portfolio",
+    "version": "1.0.0",
+    "description": "Modern portfolio website for Chacha Lesley - Web Developer, Designer, and Storyteller",
+    "main": "index.html",
+    "scripts": {
+        "dev": "http-server -p 8080 -c-1",
+        "build": "echo 'Static site - no build needed'",
+        "deploy": "gh-pages -d .",
+        "lighthouse": "lighthouse http://localhost:8080 --output html --output-path ./reports/lighthouse.html",
+        "test": "echo 'No tests specified'",
+        "validate": "html-validate index.html && stylelint css/**/*.css"
+    },
+    "keywords": [
+        "portfolio",
+        "web-developer",
+        "designer",
+        "storyteller",
+        "responsive",
+        "accessibility"
+    ],
+    "author": "Chacha Lesley <chachalesley18@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "gh-pages": "^4.0.0",
+        "lighthouse": "^10.4.0",
+        "html-validate": "^7.18.1",
+        "stylelint": "^15.10.3",
+        "stylelint-config-standard": "^34.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chachalesley/portfolio.git"
+    },
+    "homepage": "https://chachalesley.dev"
+};

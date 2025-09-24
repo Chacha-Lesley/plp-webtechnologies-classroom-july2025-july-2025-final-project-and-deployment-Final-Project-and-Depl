@@ -1,0 +1,27 @@
+{
+    "name": "Chacha Lesley - Portfolio",
+    "short_name": "Chacha Portfolio",
+    "description": "Portfolio of Chacha Lesley - Web Developer, Designer, and Storyteller",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#6366f1",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./images/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "./images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable any"
+        }
+    ],
+    "categories": ["portfolio", "developer", "design"],
+    "lang": "en",
+    "dir": "ltr"
+}

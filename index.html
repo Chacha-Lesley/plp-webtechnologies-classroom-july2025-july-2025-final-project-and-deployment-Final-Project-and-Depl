@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chacha Lesley - Web Developer | Designer | Storyteller</title>
+    <meta name="description" content="Portfolio of Chacha Lesley - A storyteller turned web developer, creating digital experiences with code and creativity.">
+    <meta name="keywords" content="web developer, designer, storyteller, JavaScript, HTML, CSS, portfolio">
+    <meta name="author" content="Chacha Lesley">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chachalesley.dev/">
+    <meta property="og:title" content="Chacha Lesley - Web Developer Portfolio">
+    <meta property="og:description" content="A storyteller turned web developer, creating digital experiences with code and creativity.">
+    <meta property="og:image" content="./images/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chachalesley.dev/">
+    <meta property="twitter:title" content="Chacha Lesley - Web Developer Portfolio">
+    <meta property="twitter:description" content="A storyteller turned web developer, creating digital experiences with code and creativity.">
+    <meta property="twitter:image" content="./images/profile.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="typewriter-loading">
+                <span>Loading</span>
+                <span class="dots">...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">CL</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links desktop-nav">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay">
+            <div class="mobile-nav-content">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#journey" class="mobile-nav-link">Journey</a></li>
+                    <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <img src="./images/profile.jpeg" alt="Chacha Lesley" class="profile-pic">
+                        <div class="emoji-mascot" title="Heeeyyyyyyy, What's up?">👋</div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-title">Hey, I'm Chacha Lesley</h1>
+                        <p class="hero-subtitle">
+                            <span class="typewriter" id="typewriter">I am a ...Web Developer | Designer | Storyteller</span>
+                        </p>
+                        <blockquote class="hero-quote">
+                            I code like I talk—fast, expressive, and always aiming to connect.
+                        </blockquote>
+                        
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Elements -->
+                <div class="floating-elements">
+                    <div class="floating-card code-card">
+                        <span class="code-symbol">&lt;/&gt;</span>
+                        <span>Code</span>
+                    </div>
+                    <div class="floating-card story-card">
+                        <span class="story-symbol">📖</span>
+                        <span>Story</span>
+                    </div>
+                    <div class="floating-card design-card">
+                        <span class="design-symbol">✨</span>
+                        <span>Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a storyteller at heart — the kind who usually crafts plot twists, not functions. 
+                            But lately, I've swapped my pen for a text editor and discovered a brand new narrative: writing in code.
+                        </p>
+                        
+                        <p>
+                            I used to write stories; now, I wire up websites, explore design systems, and occasionally 
+                            find myself dreaming in API endpoints. My toolkit is powered by:
+                        </p>
+                        
+                        <ul class="toolkit-list">
+                            <li><span class="icon">🔥</span> Restless curiosity</li>
+                            <li><span class="icon">🌙</span> Late-night "why-is-this-broken" marathons</li>
+                            <li><span class="icon">✨</span> A love of tidy Figma files and the thrill of a perfectly-aligned div</li>
+                        </ul>
+                        
+                        <p>When I'm not buried in code, you'll probably find me:</p>
+                        <ul class="activities-list">
+                            <li>Sketching oddball ideas that might (or might not) become "the next big thing"</li>
+                            <li>Turning Google Docs into blueprints for new projects</li>
+                            <li>Pitching half-baked app concepts to my ever-patient friends</li>
+                        </ul>
+                        
+                        <p class="about-conclusion">
+                            Truth is, this is my very first deep dive into coding — and I'm completely hooked. 
+                            Every line I write is a new sentence in a bigger story. And I can't wait to see where this one goes next.
+                        </p>
+                    </div>
+                    
+                    <!-- Skills Section -->
+                    <div class="skills-section">
+                        <h3>Programming Languages</h3>
+                        <p class="skills-subtitle">Languages I speak (in brackets and bugs):</p>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h4>JavaScript</h4>
+                                <p>My native tongue</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h4>HTML & CSS</h4>
+                                <p>My bread and butter</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h4>Python</h4>
+                                <p>Fluent in logic and simplicity</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h4>PHP</h4>
+                                <p>For those old-school moments</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h4>SQL</h4>
+                                <p>When I need to talk data</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <h4>TypeScript</h4>
+                                <p>JavaScript, but with a tie</p>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bonus-skills">
+                            <p><em>Bonus:</em> I'm also dangerously curious around Shell scripting and dabbling with Rust (just for fun, not for pain... yet).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey" class="journey-section section">
+            <div class="container">
+                <h2 class="section-title">My Coding Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-year="2015">
+                        <div class="timeline-content">
+                            <h3>Blogged like my life depended on it</h3>
+                            <p>Launched my first blog with a free theme, a lot of opinions, and zero SEO knowledge. Felt like CNN.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2018">
+                        <div class="timeline-content">
+                            <h3>Got paid to write</h3>
+                            <p>Made actual money from writing. Immediately started calling myself a "content strategist" in my bio. Fake it? Nah. I earned it.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2019">
+                        <div class="timeline-content">
+                            <h3>Scriptwriting phase</h3>
+                            <p>Wrote a play that made three people laugh and one person cry. I decided that counted as "impact."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-content">
+                            <h3>Organized my chaos with Notion</h3>
+                            <p>Started treating my life like a startup — ideas on sticky notes, dreams in spreadsheets, reality... still loading.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2021">
+                        <div class="timeline-content">
+                            <h3>Discovered Canva by accident</h3>
+                            <p>Was trying to make a mood board. Ended up designing a fake poster. Genuinely believed I was a graphic designer for a week.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-content">
+                            <h3>Code curiosity kicks in</h3>
+                            <p>I typed "How hard is it to learn coding?" and fell into a rabbit hole. The internet said it's doable. So I believed it.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2024 Feb">
+                        <div class="timeline-content">
+                            <h3>Touched my first line of HTML</h3>
+                            <p>It was &lt;h1&gt;Hello World&lt;/h1&gt;. I screamed when it worked. Also screamed when it broke ten minutes later.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2024 Apr">
+                        <div class="timeline-content">
+                            <h3>First button appeared on screen</h3>
+                            <p>It didn't do anything, but it was there. On purpose. Felt like magic.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2025 Mar">
+                        <div class="timeline-content">
+                            <h3>Tried JavaScript for the first time</h3>
+                            <p>It didn't try me back. But we're working on our relationship.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2025 Jun">
+                        <div class="timeline-content">
+                            <h3>Joined a hackathon anyway</h3>
+                            <p>Do I know what I'm doing? Not really.<br>
+                            Am I doing it anyway? Absolutely.<br>
+                            Am I Googling every five minutes? Also yes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item current" data-year="2025 Aug">
+                        <div class="timeline-content">
+                            <h3>Building my first app (!!!)</h3>
+                            <p>Plot twist: the writer is now learning to build things that don't live in paragraphs. I'm not a developer yet — but I'm a developer in progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section id="secrets" class="secrets-section section">
+            <div class="container">
+                <div class="secrets-box">
+                    <h2>Things I Shouldn't Admit Online</h2>
+                    <div class="secrets-grid">
+                        <div class="secret-card">
+                            <span class="icon">📜</span>
+                            <p>Once outlined a novel on a napkin. Still haven't typed it up.</p>
+                        </div>
+                        <div class="secret-card">
+                            <span class="icon">☕</span>
+                            <p>Powered by more chai than JavaScript (but learning both daily).</p>
+                        </div>
+                        <div class="secret-card">
+                            <span class="icon">📅</span>
+                            <p>"Productivity" is sometimes just color-coding Trello boards for joy.</p>
+                        </div>
+                        <div class="secret-card">
+                            <span class="icon">💡</span>
+                            <p>Will pitch app ideas to anyone—including my neighbor's cat.</p>
+                        </div>
+                        <div class="secret-card">
+                            <span class="icon">🤖</span>
+                            <p>Google once asked: "Are you a robot?" after a bug-fixing spree.</p>
+                        </div>
+                        <div class="secret-card">
+                            <span class="icon">🎭</span>
+                            <p>Believes imposter syndrome is just the first stage of every origin story.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="projects-intro">Coming soon... ish.<br>
+                But for now, here's a sneak peek of what's brewing:</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>CodeJukebox</h3>
+                            <span class="project-status brewing">Brewing</span>
+                        </div>
+                        <p>A web app that turns your GitHub commits into a music playlist. (Because vibes.)</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">GitHub API</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>404Buddy</h3>
+                            <span class="project-status brewing">Brewing</span>
+                        </div>
+                        <p>A Chrome extension that turns 404 pages into daily creative writing prompts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Chrome Extension</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>MoodBoarder</h3>
+                            <span class="project-status brewing">Brewing</span>
+                        </div>
+                        <p>Drag-and-drop mood board builder with zero sign-up friction. Designers, rejoice!</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Canvas API</span>
+                            <span class="tech-tag">Drag & Drop</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projects-note">
+                    <p>Projects will be live in a week. Until then, pretend this was impressive. Thanks!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="interests-section section">
+            <div class="container">
+                <h2 class="section-title">What Gets Me Hyped in Tech?</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">😊</div>
+                        <h3>User Experience</h3>
+                        <p>Building interfaces that make people smile</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🛠️</div>
+                        <h3>Problem Solving</h3>
+                        <p>Solving real-world problems with clean, scalable code</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🤝</div>
+                        <h3>Open Source</h3>
+                        <p>Open-source collaboration (let's build cool stuff together)</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🌍</div>
+                        <h3>Tech for Good</h3>
+                        <p>Tech for social good — I want my work to matter</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🤖</div>
+                        <h3>AI + Stories</h3>
+                        <p>AI + Storytelling? Yes, please.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section">
+            <div class="container">
+                <h2 class="section-title">Educational Background</h2>
+                <div class="education-content">
+                    <div class="education-card">
+                        <div class="education-icon">🎓</div>
+                        <div class="education-details">
+                            <h3>Bachelor of Commerce</h3>
+                            <p class="university">University of Nairobi</p>
+                            <p class="graduation">Graduation: 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <p>Want to know more about my journey?</p>
+                        <a href="https://www.linkedin.com/in/chachalesley/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            View My LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect!</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-intro">
+                        <p>If you've got:</p>
+                        <ul class="contact-list">
+                            <li><span class="icon">💡</span> A wild idea</li>
+                            <li><span class="icon">👥</span> A team slot that needs flair</li>
+                            <li><span class="icon">😄</span> Or just a good meme</li>
+                        </ul>
+                        <p><strong>Let's talk!</strong></p>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <span class="form-error" id="nameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="form-error" id="emailError"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="form-error" id="messageError"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+                        
+                        <div class="success-message" id="successMessage" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Message Sent!</h3>
+                            <p>Thanks for reaching out! I'll get back to you soon.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Direct Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:chachalesley18@gmail.com">chachalesley18@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <a href="https://www.linkedin.com/in/chachalesley/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Action Buttons -->
+    <div class="floating-actions">
+        <a href="https://www.linkedin.com/in/chachalesley/" target="_blank" rel="noopener noreferrer" 
+           class="action-btn cv-btn" aria-label="View LinkedIn Profile">
+            <span class="btn-icon">📄</span>
+            <span class="btn-label">Paper Trail</span>
+        </a>
+        <a href="#contact" class="action-btn contact-btn" aria-label="Contact Me">
+            <span class="btn-icon">💬</span>
+            <span class="btn-label">Collab Time</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Chacha Lesley. All rights reserved.</p>
+                <p class="footer-tagline"><em>Still under construction. Like the best things in life.</em></p>
+            </div>
+            
+            <div class="social-links">
+                <a href="mailto:chachalesley18@gmail.com" aria-label="Email" class="social-link">
+                    <span>📧</span>
+                </a>
+                <a href="https://www.linkedin.com/in/chachalesley/" target="_blank" rel="noopener noreferrer" 
+                   aria-label="LinkedIn" class="social-link">
+                    <span>💼</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/typewriter.js"></script>
+</body>
+</html>
