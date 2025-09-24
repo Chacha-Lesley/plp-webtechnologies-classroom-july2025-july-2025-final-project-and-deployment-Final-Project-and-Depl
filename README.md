@@ -6,7 +6,7 @@ A modern, responsive portfolio website showcasing the journey from storyteller t
 
 ## 🌟 Live Demo
 
-**[View Portfolio](https://github.com/Chacha-Lesley)** *(Update with your actual domain)*
+**[View Portfolio](https://chacha-lesley.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)**
 
 ## 📋 Table of Contents
 
@@ -148,31 +148,7 @@ npm run validate
 1. **Push to GitHub** repository
 2. **Go to Settings > Pages**
 3. **Select source branch** (main/master)
-4. **Site will be available** at `https://yourusername.github.io/portfolio`
-
-```bash
-# Deploy using gh-pages (if using npm)
-npm run deploy
-```
-
-### Netlify
-
-1. **Drag and drop** project folder to Netlify
-2. **Or connect GitHub** repository for auto-deploy
-3. **Custom domain** supported
-4. **Form handling** available with Netlify Forms
-
-### Vercel
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Follow prompts for configuration
-```
+4. **Site will be available** at `https://chacha-lesley.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/`
 
 ### Traditional Hosting
 
@@ -571,7 +547,7 @@ Users can install the portfolio as a native app:
 ### Get in Touch
 - **Email:** [chachalesley18@gmail.com](mailto:chachalesley18@gmail.com)
 - **LinkedIn:** [linkedin.com/in/chachalesley](https://www.linkedin.com/in/chachalesley)
-- **Portfolio:** [chachalesley.dev](https://github.com/Chacha-Lesley)
+- **Portfolio:** [chachalesley.dev](https://chacha-lesley.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
 ### Support
 If you encounter any issues or have questions:
@@ -589,8 +565,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - ✅ **Modify** and customize as needed
 - ✅ **Distribute** copies or modified versions
 - ✅ **Private use** allowed
-- ❗ **Include license** and copyright notice
-- ❗ **No warranty** provided
 
 ## 🎯 Final Notes
 
